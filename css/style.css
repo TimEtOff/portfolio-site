@@ -1,0 +1,26 @@
+:root {
+    /* From u/perfecthue
+    */
+    --walpaper-img-url: url("../img/wallpaper-day.jpg");
+}
+
+:root[data-theme=night] {
+    /* From u/perfecthue
+    */
+    --walpaper-img-url: url("../img/wallpaper-night.jpg");
+}
+
+body {
+    
+    background: var(--walpaper-img-url);
+    background-size: cover;
+    padding: 20px;
+}
+
+main {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
