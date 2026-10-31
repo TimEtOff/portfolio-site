@@ -18,7 +18,7 @@
 
   position: relative;
   isolation: isolate;
-  width: 520px;
+  width: 100%;
   border-radius: var(--radius);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, system-ui, sans-serif;
   font-size: 12px;
@@ -232,15 +232,26 @@
   border-bottom: 0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
+:root[data-theme=night] .aero-window .aero-menubar {
+  background: linear-gradient(#141414 0%, #202327 45%, #2a313c 55%, #242930 100%);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.9);
+}
 .aero-window .aero-menubar span {
   padding: 4px 10px;
   cursor: default;
   color: #1b1b1b;
 }
+:root[data-theme=night] .aero-window .aero-menubar span {
+  color: #f0f0f0;
+}
 .aero-window .aero-menubar span:hover {
   background: linear-gradient(#eaf4fd, #cfe8fb);
   box-shadow: inset 0 0 0 1px #b5dcfb;
   border-radius: 3px;
+}
+:root[data-theme=night] .aero-window .aero-menubar span:hover {
+  background: linear-gradient(#1d272f, #1b3240);
+  box-shadow: inset 0 0 0 1px #123e57;
 }
 
 /* ---- Content area ---- */
@@ -280,6 +291,12 @@
   border-top: 0;
   border-radius: 0 0 3px 3px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+:root[data-theme=night] .aero-window .aero-statusbar {
+  color: #f0f0f0;
+  background: linear-gradient(#1f2124, #282c32);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.85);
 }
 .aero-window .aero-statusbar .aero-status-grow {
   flex: 1;
