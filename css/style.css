@@ -2,6 +2,7 @@
     /* From u/perfecthue
     */
     --walpaper-img-url: url("../img/wallpaper-day.jpg");
+    --desktop-font-family: "Segoe UI", Tahoma, Geneva, Verdana, system-ui, sans-serif;
 }
 
 :root[data-theme=night] {
@@ -77,6 +78,50 @@ img {
     }
 }
 
+header {
+    position: absolute;
+    top: 0;
+    left : 0;
+    padding: 20px;
+}
+
+.desktop-icon {
+    width: 80px;
+    height: 80px;
+    display: grid;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: stretch;
+    grid-auto-flow: row;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.desktop-icon:hover,
+.desktop-icon:focus {
+    border: 1px solid #ffffff;
+    box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.9),
+    1px 0 0 rgba(0, 0, 0, 0.7),
+    -1px 0 0 rgba(0, 0, 0, 0.7);
+}
+
+.desktop-icon * {
+    filter: drop-shadow(2px 2px 5px black);
+}
+
+.desktop-icon img {
+    width: 70%;
+}
+
+.desktop-icon span {
+    color: #ffffff;
+    font-family: var(--desktop-font-family);
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -85,7 +130,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 nav  {
@@ -94,5 +139,5 @@ nav  {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 20px 20px;
+    padding: 0 40px 40px;
 }

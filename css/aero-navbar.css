@@ -1,7 +1,7 @@
 /* Authentic Frutiger Aero Button CSS */
 .aero-navbar {
   /* OKLCH Color System for accurate colors */
-  --hue: 245;
+  --hue: 200;
   --sat: 0.2;
   --glow-intensity: 0.7;
 
@@ -41,6 +41,11 @@
   /* Prevent text selection */
   user-select: none;
   -webkit-user-select: none;
+}
+
+:root[data-theme=night] .aero-navbar {
+  --hue: 180;
+  --glow-intensity: 0.3;
 }
 
 /* Diagonal Glass Shine Sweep — the classic Web 2.0 glare streak */
